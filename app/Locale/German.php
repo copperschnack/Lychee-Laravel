@@ -230,6 +230,7 @@ final class German implements LangInterface
 			'SETTINGS_SUCCESS_LANG'			=> 'Sprache aktualisiert',
 			'SETTINGS_SUCCESS_LAYOUT'		=> 'Layout aktualisiert',
 			'SETTINGS_SUCCESS_IMAGE_OVERLAY'=> 'EXIF-Overlay-Einstellungen aktualisiert',
+			'SETTINGS_SUCCESS_PUBLIC_SEARCH'=> 'Public search updated',
 			'SETTINGS_SUCCESS_LICENSE'		=> 'Standard-Lizenz aktualisiert',
 			'SETTINGS_SUCCESS_CSS'			=> 'CSS aktualisiert',
 			'SETTINGS_SUCCESS_UPDATE'		=> 'Einstellungen erfolgreich aktualisiert',
@@ -294,6 +295,7 @@ final class German implements LangInterface
 
 			'CSS_TEXT'					=> 'CSS personalisieren:',
 			'CSS_TITLE'					=> 'CSS ändern',
+			'PUBLIC_SEARCH_TEXT'		=> 'Öffentliche Suche erlauben:',
 			'IMAGE_OVERLAY_TEXT'		=> 'EXIF-Daten-Overlay standardmäßig anzeigen:',
 			'OVERLAY_TYPE'				=> 'Data to use in image overlay:',
 			'OVERLAY_EXIF'				=> 'Photo EXIF data',
@@ -303,7 +305,7 @@ final class German implements LangInterface
 			'LAYOUT_SQUARES'			=> 'Square thumbnails',
 			'LAYOUT_JUSTIFIED'			=> 'With aspect, justified',
 			'LAYOUT_UNJUSTIFIED'		=> 'With aspect, unjustified',
-			'SET_LAYOUT'				=> 'Ausgerichtetes Layout benutzen:',
+			'SET_LAYOUT'				=> 'Ausgerichtetes Layout benutzen:',			
 
 			'VIEW_NO_RESULT'			=> 'Keine Ergebnisse',
 			'VIEW_NO_PUBLIC_ALBUMS'		=> 'Keine öffentlichen Alben',
@@ -340,7 +342,10 @@ final class German implements LangInterface
 
 			'ABOUT_SUBTITLE'			=> 'Selbst gehostetes Foto-Management, aber richtig!',
 			'ABOUT_DESCRIPTION'			=> 'ist ein freies Foto-Management-Werkzeug, dass auf Ihrem Server oder Webspace läuft. Die Installation ist eine Sache von Sekunden. Hochladen, Organisieren und Teilen von Fotos funktioniert wie in einer nativen Anwendung. Lychee hält alles bereit, was Sie benötigen, und alle Bilder werden sicher abgespeichert.',
-			'FOOTER_COPYRIGHT'			=> 'Alle Bilder auf dieser Website unterliegen dem Copyright von '
+			'FOOTER_COPYRIGHT'			=> 'Alle Bilder auf dieser Website unterliegen dem Copyright von ',
+			
+			'HEADER_HOSTEDWITH'			=> 'Bereitgestellt mit Lychee',
+			'HEADER_SEARCH_PLACEHOLDER'	=> 'Suchen …'
 		);
 
 		return $locale;

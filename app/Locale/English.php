@@ -227,6 +227,7 @@ final class English implements LangInterface
 			'SETTINGS_SUCCESS_LANG'			=> 'Language updated',
 			'SETTINGS_SUCCESS_LAYOUT'		=> 'Layout updated',
 			'SETTINGS_SUCCESS_IMAGE_OVERLAY'=> 'EXIF Overlay setting updated',
+			'SETTINGS_SUCCESS_PUBLIC_SEARCH'=> 'Public search updated',
 			'SETTINGS_SUCCESS_LICENSE'		=> 'Default license updated',
 
 			'DB_INFO_TITLE'				=> 'Enter your database connection details below:',
@@ -286,6 +287,7 @@ final class English implements LangInterface
 
 			'LANG_TEXT'					=> 'Change Lychee language for:',
 			'LANG_TITLE'				=> 'Change Language',
+			'PUBLIC_SEARCH_TEXT'		=> 'Public search allowed:',
 			'IMAGE_OVERLAY_TEXT'		=> 'Display data overlay by default:',
 			'OVERLAY_TYPE'				=> 'Data to use in image overlay:',
 			'OVERLAY_EXIF'				=> 'Photo EXIF data',
@@ -332,7 +334,10 @@ final class English implements LangInterface
 
 			'ABOUT_SUBTITLE'			=> 'Self-hosted photo-management done right',
 			'ABOUT_DESCRIPTION'			=> 'is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.',
-			'FOOTER_COPYRIGHT'			=> 'All images on this website are subject to Copyright by '
+			'FOOTER_COPYRIGHT'			=> 'All images on this website are subject to Copyright by ',
+
+			'HEADER_HOSTEDWITH'			=> 'Hosted with Lychee',
+			'HEADER_SEARCH_PLACEHOLDER'	=> 'Search …'
 		);
 
 		return $locale;

@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Configs;
 use App\Album;
 use App\ModelFunctions\AlbumFunctions;
 use App\Photo;
@@ -85,7 +86,13 @@ class SearchController extends Controller
 		 * Photos
 		 */
 		// for now we only look in OUR pictures
-		$query = Photo::where('owner_id', '=', $id);
+		$query = Photo::where('id', '>', 0);
+		$query->where(function (Builder $query) use ($id) {
+			$query->where('owner_id', '=', $id);
+			if (Configs::get_value('public_search', '0') == '1') {
+				$query = $query->orWhere('public', '>=', 0);
+			}		
+		});
 		for ($i = 0; $i < count($escaped_terms); ++$i) {
 			$escaped_term = $escaped_terms[$i];
 			$query = $query->Where(
@@ -100,15 +107,23 @@ class SearchController extends Controller
 		if ($photos != null) {
 			$i = 0;
 			foreach ($photos as $photo) {
-				$return['photos'][$i] = $photo->prepareData();
-				++$i;
+				if (Session::has('UserID') || $photo->get_public()) {
+					$return['photos'][$i] = $photo->prepareData();
+					++$i;
+				}
 			}
 		}
 
 		/**
 		 * Albums
 		 */
-		$query = Album::where('owner_id', '=', $id);
+		$query = Album::where('id', '>', 0);
+		$query->where(function (Builder $query) use ($id) {
+			$query->where('owner_id', '=', $id);
+			if (Configs::get_value('public_search', '0') == '1') {
+				$query = $query->orWhere('public', '=', 1);
+			}		
+		});		
 		for ($i = 0; $i < count($escaped_terms); ++$i) {
 			$escaped_term = $escaped_terms[$i];
 			$query = $query->Where(
