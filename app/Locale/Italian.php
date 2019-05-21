@@ -230,6 +230,7 @@ final class Italian implements LangInterface
 			'SETTINGS_SUCCESS_LANG'			=> 'Lingua aggiornata',
 			'SETTINGS_SUCCESS_LAYOUT'		=> 'Layout aggiornato',
 			'SETTINGS_SUCCESS_IMAGE_OVERLAY'=> 'Impostazioni filigrana EXIF aggiornate',
+			'SETTINGS_SUCCESS_PUBLIC_SEARCH'=> 'Ricerca pubblica aggiornata',
 			'SETTINGS_SUCCESS_LICENSE'		=> 'Licenza predefinita aggiornata',
 
 			'DB_INFO_TITLE'				=> 'Inserisci i dati per la connessione al database di seguito:',
@@ -297,6 +298,7 @@ final class Italian implements LangInterface
 			'LAYOUT_UNJUSTIFIED'		=> 'Relativo all\'aspetto, non giustificate',
 			'SET_LAYOUT'				=> 'Cambia layout',
 
+			'PUBLIC_SEARCH_TEXT'		=> 'Ricerca pubblica consentita:',
 			'IMAGE_OVERLAY_TEXT'		=> 'Mostra dati della filigrana per impostazione predefinita:',
 
 			'OVERLAY_TYPE'				=> 'Contenuto da utilizzare nella filigrana:',
@@ -339,7 +341,10 @@ final class Italian implements LangInterface
 
 			'ABOUT_SUBTITLE'			=> 'Gestione propria delle foto fatta nel modo giusto',
 			'ABOUT_DESCRIPTION'			=> 'è uno strumento gratuito di gestione delle foto, eseguito nel server o sul tuo spazio web. L\'installazione è questione di secondi. Carica, gestisci e condividi foto come in un\'applicazione nativa. Lychee offre tutto ciò di cui hai bisogno e tutte le tue foto vengono salvate in modo sicuro.',
-			'FOOTER_COPYRIGHT'			=> 'Tutte le immagini su questo sito web sono soggette a Copyright di'
+			'FOOTER_COPYRIGHT'			=> 'Tutte le immagini su questo sito web sono soggette a Copyright di',
+
+			'HEADER_HOSTEDWITH'			=> 'Ospitato con Lychee',
+			'HEADER_SEARCH_PLACEHOLDER'	=> 'Ricerca …'
 		);
 
 		return $locale;

@@ -227,6 +227,7 @@ final class Swedish implements LangInterface
 			'SETTINGS_SUCCESS_LANG'			=> 'Language updated',
 			'SETTINGS_SUCCESS_LAYOUT'		=> 'Layout updated',
 			'SETTINGS_SUCCESS_IMAGE_OVERLAY'=> 'EXIF Overlay setting updated',
+			'SETTINGS_SUCCESS_PUBLIC_SEARCH'=> 'Offentlig sökning uppdaterad',
 			'SETTINGS_SUCCESS_LICENSE'		=> 'Default license updated',
 
 			'DB_INFO_TITLE'				=> 'Ange dina uppgifter för databasanslutninge nedan:',
@@ -286,6 +287,7 @@ final class Swedish implements LangInterface
 
 			'LANG_TEXT'					=> 'Ändra språket i Lychee till:',
 			'LANG_TITLE'				=> 'Spara ändringen av språket',
+			'PUBLIC_SEARCH_TEXT'		=> 'Offentlig sökning tillåts:',
 			'IMAGE_OVERLAY_TEXT'		=> 'Display data overlay by default:',
 			'OVERLAY_TYPE'				=> 'Data to use in image overlay:',
 			'OVERLAY_EXIF'				=> 'Photo EXIF data',
@@ -332,7 +334,10 @@ final class Swedish implements LangInterface
 
 			'ABOUT_SUBTITLE'			=> 'Self-hosted photo-management done right',
 			'ABOUT_DESCRIPTION'			=> 'is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.',
-			'FOOTER_COPYRIGHT'			=> 'Alla bilder på denna webbplats är föremål för upphovsrätt från'
+			'FOOTER_COPYRIGHT'			=> 'Alla bilder på denna webbplats är föremål för upphovsrätt från',
+
+			'HEADER_HOSTEDWITH'			=> 'Hosted with Lychee',
+			'HEADER_SEARCH_PLACEHOLDER'	=> 'Sök …'
 		);
 
 		return $locale;

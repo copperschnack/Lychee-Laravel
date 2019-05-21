@@ -227,6 +227,7 @@ final class Dutch implements LangInterface
 			'SETTINGS_SUCCESS_LANG'			=> 'Language updated',
 			'SETTINGS_SUCCESS_LAYOUT'		=> 'Layout updated',
 			'SETTINGS_SUCCESS_IMAGE_OVERLAY'=> 'EXIF Overlay setting updated',
+			'SETTINGS_SUCCESS_PUBLIC_SEARCH'=> 'Publieke zoekactie bijgewerkt',
 			'SETTINGS_SUCCESS_LICENSE'		=> 'Default license updated',
 
 			'DB_INFO_TITLE'				=> 'Voer je database connectie gegevens hieronder in:',
@@ -287,6 +288,7 @@ final class Dutch implements LangInterface
 			'LANG_TEXT'					=> 'Change Lychee language for:',
 			'LANG_TITLE'				=> 'Change Language',
 			'IMAGE_OVERLAY_TEXT'		=> 'Display data overlay by default:',
+			'PUBLIC_SEARCH_TEXT'		=> 'Openbare zoekactie toegestaan:',
 			'OVERLAY_TYPE'				=> 'Data to use in image overlay:',
 			'OVERLAY_EXIF'				=> 'Photo EXIF data',
 			'OVERLAY_DESCRIPTION'		=> 'Photo description',
@@ -332,7 +334,10 @@ final class Dutch implements LangInterface
 
 			'ABOUT_SUBTITLE'			=> 'Self-hosted photo-management done right',
 			'ABOUT_DESCRIPTION'			=> 'is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.',
-			'FOOTER_COPYRIGHT'			=> 'Alle afbeeldingen op deze website zijn onderworpen aan het auteursrecht van'
+			'FOOTER_COPYRIGHT'			=> 'Alle afbeeldingen op deze website zijn onderworpen aan het auteursrecht van',
+
+			'HEADER_HOSTEDWITH'			=> 'Gehost met Lychee',
+			'HEADER_SEARCH_PLACEHOLDER'	=> 'zoeken …'
 		);
 
 		return $locale;
