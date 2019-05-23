@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Config;
+use App\Locale\Lang;
 
 /**
  * App\Photo
@@ -308,7 +309,9 @@ class Photo extends Model
 			// Use takestamp
 			$photo['cameraDate'] = '1';
 			$photo['sysdate'] = $this->created_at->format('d F Y');
-			$photo['takedate'] = $this->takestamp->format('d F Y \a\t H:i');
+
+			setlocale(LC_TIME, Configs::get_value('lang')); 
+			$photo['takedate'] = $this->takestamp->formatLocalized('%A, %d. %B %Y');
 
 		}
 		else {

@@ -22,6 +22,7 @@ final class Dutch implements LangInterface
 			'SETTINGS'      => 'Settings',
 			'SEARCH'        => 'Search ...',
 			'MORE'          => 'More',
+			'ABOUT'        	=> 'About',
 
 			'USERS'				=> 'Users',
 			'SHARING'			=> 'Sharing',

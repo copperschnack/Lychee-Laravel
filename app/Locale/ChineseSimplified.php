@@ -20,8 +20,9 @@ final class ChineseSimplified implements LangInterface
 			'SIGN_IN'		=> '登录',
 			'CLOSE'			=> '关闭',
 			'SETTINGS'      => 'Settings',
-			'SEARCH'        => 'Search ...',
+			'SEARCH'        => 'Search ...',			
 			'MORE'          => 'More',
+			'ABOUT'        	=> 'About',
 
 			'USERS'				=> 'Users',
 			'SHARING'			=> 'Sharing',

@@ -22,6 +22,7 @@ final class German implements LangInterface
 			'SETTINGS'			=> 'Einstellungen',
 			'SEARCH'        	=> 'Suchen ...',
 			'MORE'				=> 'Mehr',
+			'ABOUT'        		=> 'Info',
 
 			'USERS'				=> 'Benutzer',
 			'SHARING'			=> 'Freigabe',

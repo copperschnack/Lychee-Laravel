@@ -22,6 +22,7 @@ final class Italian implements LangInterface
 			'SETTINGS'			=> 'Impostazioni',
 			'SEARCH'			=> 'Cerca...',
 			'MORE'				=> 'Altro',
+			'ABOUT'        		=> 'About',
 
 			'USERS'				=> 'Utenti',
 			'SHARING'			=> 'Condivisione',

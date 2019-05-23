@@ -22,6 +22,7 @@ final class Slovak implements LangInterface
 			'SETTINGS'		=> 'Nastavenia',
 			'SEARCH'        => 'Hľadaj ...',
 			'MORE'          => 'Viac',
+			'ABOUT'        	=> 'About',
 						
 			'USERS'				=> 'Užívatelia',
 			'SHARING'			=> 'Zdieľanie',

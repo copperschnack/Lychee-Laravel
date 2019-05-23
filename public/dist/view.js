@@ -1993,6 +1993,8 @@ sidebar.createStructure.photo = function (data) {
 	// Construct all parts of the structure
 	structure = [structure.basics, structure.image, structure.tags, structure.exif, structure.sharing, structure.license];
 
+	if (!$(".sidebar").hasClass("active")) sidebar.toggle();
+
 	return structure;
 };
 
@@ -2136,6 +2138,8 @@ sidebar.createStructure.album = function (data) {
 	// Construct all parts of the structure
 	structure = [structure.basics, structure.album, structure.share, structure.license];
 
+	if ($(".sidebar").hasClass("active")) sidebar.toggle();
+
 	return structure;
 };
 
@@ -2201,6 +2205,7 @@ lychee.locale = {
 	'CANCEL': 'Cancel',
 	'SIGN_IN': 'Sign In',
 	'CLOSE': 'Close',
+	'ABOUT': 'About',
 
 	'SETTINGS': 'Settings',
 	'USERS': 'Users',
