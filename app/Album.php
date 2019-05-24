@@ -156,9 +156,11 @@ class Album extends Model
 		$album['downloadable'] = strval($this->downloadable);
 
 		// Parse date
-		$album['sysdate'] = $this->created_at->format('F Y');
-		$album['min_takestamp'] = $this->min_takestamp == null ? '' : $this->min_takestamp->format('M Y');
-		$album['max_takestamp'] = $this->max_takestamp == null ? '' : $this->max_takestamp->format('M Y');
+		setlocale(LC_TIME, Configs::get_value('lang'));
+		$sysdate = $this->min_takestamp == null ? $this->created_at : $this->min_takestamp;
+		$album['sysdate'] = utf8_encode($sysdate->formatLocalized('%A, %d. %B %Y'));
+		$album['min_takestamp'] = utf8_encode($this->min_takestamp == null ? '' : $this->min_takestamp->formatLocalized('%A, %d. %B %Y'));
+		$album['max_takestamp'] = utf8_encode($this->max_takestamp == null ? '' : $this->max_takestamp->formatLocalized('%A, %d. %B %Y'));
 
 		// Parse password
 		$album['password'] = ($this->password == '' ? '0' : '1');

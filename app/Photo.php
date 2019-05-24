@@ -194,7 +194,7 @@ class Photo extends Model
 		$photo['latitude'] = $this->latitude;
 		$photo['longitude'] = $this->longitude;
 		$photo['altitude'] = $this->altitude;
-		$photo['sysdate'] = $this->created_at->format('d F Y');
+		$photo['sysdate'] = utf8_encode($this->created_at->formatLocalized('%A, %d. %B %Y'));
 		$photo['tags'] = $this->tags;
 		$photo['description'] = $this->description == null ? '' : $this->description;
 		$photo['license'] = Configs::get_value('default_license'); // default
@@ -304,21 +304,21 @@ class Photo extends Model
 		$photo['url'] = Config::get('defines.urls.LYCHEE_URL_UPLOADS_BIG').$this->url;
 
 		// Use takestamp as sysdate when possible
+		setlocale(LC_TIME, Configs::get_value('lang'));
 		if (isset($this->takestamp) && $this->takestamp != null) {
 
 			// Use takestamp
-			$photo['cameraDate'] = '1';
-			$photo['sysdate'] = $this->created_at->format('d F Y');
-
-			setlocale(LC_TIME, Configs::get_value('lang')); 
-			$photo['takedate'] = $this->takestamp->formatLocalized('%A, %d. %B %Y');
+			$photo['cameraDate'] = '1';			
+			
+			$photo['sysdate'] = utf8_encode($this->created_at->formatLocalized('%A, %d. %B %Y'));
+			$photo['takedate'] = utf8_encode($this->takestamp->formatLocalized('%A, %d. %B %Y'));
 
 		}
 		else {
 
 			// Use sysstamp from the id
 			$photo['cameraDate'] = '0';
-			$photo['sysdate'] = $this->created_at->format('d F Y');
+			$photo['sysdate'] = utf8_encode($this->created_at->formatLocalized('%A, %d. %B %Y'));
 			$photo['takedate'] = '';
 
 		}
